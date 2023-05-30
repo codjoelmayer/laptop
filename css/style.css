@@ -23,7 +23,7 @@ nav, main, footer {
     width: 10rem;
     aspect-ratio: 3/2;
     object-fit: cover;
-    mix-blend-mode: color-burn;
+    padding-block: .3rem;
     text-align: center;
 }
 
