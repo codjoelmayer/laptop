@@ -1,3 +1,6 @@
+:root{
+    --border-color: rgba(48, 176, 31, 0.6);
+}
 /* Bootstrap's icon */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 /* Logo */
@@ -8,7 +11,7 @@ img[alt="Logo"] {
 body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 100vh auto;
     text-align: center;
 }
 /* nav, main, footer */
@@ -26,10 +29,19 @@ nav, main, footer {
     padding-block: .3rem;
     text-align: center;
 }
-
+/* Contact page */
+.form {
+    width: 20rem;
+} 
+.form>* {
+    margin-block: .3rem;
+}
+.form input:hover, .form textarea:hover{
+    outline: 3px solid var(--border-color);
+}
 @media screen and (width < 900px) {
     .productListing >* {
         border-radius: 5%;
-        border: 2px solid green;
+        border: 2px solid var(--border-color);
     }
 }
