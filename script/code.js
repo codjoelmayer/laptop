@@ -50,7 +50,7 @@ products.forEach( (item)=> {
             <div class="card-body">
                 <h5 class="card-title">${item.name} for ${item.type}</h5>
                 <p class="card-text"><span>Description: </span>${item.description}</p>
-                <p class="card-text"><span>Price: </span>${item.price}</p>
+                <p class="card-text"><span>Price: R</span>${item.price}</p>
             </div>
         </div>
     `
