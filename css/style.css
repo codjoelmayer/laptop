@@ -1,2 +1,17 @@
 /* Bootstrap's icon */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+/* Logo */
+img[alt="Logo"] {
+    width: 5rem;
+}
+/* outer layout */
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 100vh auto;
+    text-align: center;
+}
+/* nav, main, footer */
+nav, main, footer {
+    grid-column: 1 / -1;
+}
